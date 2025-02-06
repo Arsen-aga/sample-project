@@ -1,0 +1,39 @@
+@import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox';
+@import '../../node_modules/swiper/swiper-bundle';
+
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/containers';
+@import 'base/sticky-footer';
+@import 'base/base';
+@import 'base/titles';
+
+
+@import './components/filters.scss';
+@import './components/accordion.scss';
+
+
+@import 'blocks/header';
+@import 'blocks/section-1';
+@import 'blocks/section-2';
+@import 'blocks/section-3';
+@import 'blocks/section-4';
+@import 'blocks/section-5';
+@import 'blocks/section-6';
+@import 'blocks/section-7';
+@import 'blocks/section-8';
+@import 'blocks/section-9';
+@import 'blocks/section-10';
+
+
+@import 'blocks/section-13';
+@import 'blocks/section-14';
+@import 'blocks/section-15';
+@import 'blocks/section-16';
+@import 'blocks/guarantee';
+@import 'blocks/footer';
+
+
+

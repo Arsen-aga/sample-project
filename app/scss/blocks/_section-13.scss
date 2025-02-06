@@ -1,0 +1,160 @@
+.section-13 {
+  background-image: url('../images/section-13-bg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: var(--indent) 0;
+
+
+  &__title {
+    text-align: left;
+    margin-bottom: 90px;
+
+    @include xl {
+      margin-bottom: 40px;
+    }
+
+    @include lg {
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__form {
+    padding: 60px 70px;
+    border-radius: 16px;
+    background-color: var(--light-color);
+    position: relative;
+
+    @include lg {
+      padding: 50px;
+    }
+
+    @include md {
+      padding: 30px;
+    }
+
+    @include xs {
+      padding: 30px 20px;
+    }
+  }
+
+  &__form-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 138%;
+    color: var(--default-color);
+    margin-bottom: 30px;
+
+    @include xl {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    @include lg {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    @include md {
+      font-size: 24px;
+    }
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  &__form-row {
+    gap: 10px;
+    display: flex;
+    margin-bottom: 16px;
+
+    @include md {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__form-tel {
+    max-width: 420px;
+
+    @include md {
+      max-width: none;
+    }
+  }
+
+  &__form-btn {
+    max-width: 400px;
+
+    @include md {
+      max-width: none;
+    }
+  }
+
+  &__form-bottom {
+    max-width: 830px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include md {
+      flex-wrap: wrap-reverse;
+      gap: 15px;
+    }
+  }
+
+  &__form-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__form-link {
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--default-color);
+
+    @include lg {
+      font-size: 16px;
+    }
+  }
+
+  &__checkbox-block {
+    margin-right: 35px;
+
+    @include lg {
+      margin-right: 0;
+      max-width: 285px;
+    }
+
+    @include md {
+      max-width: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: -38px;
+    top: -160px;
+
+    @include xl {
+      width: 440px;
+      top: 0px;
+      right: 0px;
+      opacity: 0.4;
+    }
+
+    @include lg {
+      top: auto;
+      width: 300px;
+    }
+  }
+
+
+
+
+}

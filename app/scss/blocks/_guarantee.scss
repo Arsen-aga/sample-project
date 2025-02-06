@@ -1,0 +1,77 @@
+.guarantee {
+
+    background-color:var(--page-bg);
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @include lg{
+           grid-auto-flow: column;
+           overflow-y: hidden;
+           overflow-x: scroll;
+        }
+    }
+
+
+    &__item {
+        height: 320px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15px;
+
+        @include lg{
+            width: 585px;
+        }
+    }
+
+    &__item-img {
+        border-radius: 20px;
+    }
+
+    &__item-list{
+        display: grid;
+        gap: 10px;
+
+        
+    }
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        color: var(--light-color);
+        
+        @include lg{
+            font-size: 18px;
+        }
+    }
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: var(--light-color);
+        
+    }
+
+    &__item-point {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: var(--light-color);
+        
+    }
+
+
+    .overlay {
+        display: block;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        border-radius: 20px;
+    }
+
+
+}

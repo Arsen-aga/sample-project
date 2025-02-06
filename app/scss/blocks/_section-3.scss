@@ -1,0 +1,160 @@
+.section-3 {
+  padding-top: var(--indent);
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+
+    @include xl {
+      margin-bottom: 40px;
+    }
+
+    @include lg {
+      margin-bottom: 30px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    @include md {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item:hover {
+    .section-3__item-link {
+      opacity: 1;
+    }
+  }
+
+  &__item-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    padding-bottom: calc(417/289*100%);
+
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__item-title {
+    position: absolute;
+    top: 0;
+    background-color: var(--primary);
+    padding: 15px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-color);
+  }
+
+  &__item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    color: var(--light-color);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 0;
+    transition: all .3s;
+  }
+
+  &__swiper-wrapper {
+    @include lg {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__slide {
+    width: 300px;
+  }
+
+  &__slide-item {
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 100%;
+
+    &:hover .section-3__slide-info {
+      background-color: var(--primary);
+    }
+  }
+
+  &__slide-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__slide-info {
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    width: 100%;
+    background-color: var(--default-color);
+    transition: all .3s;
+  }
+
+  &__slide-title {
+    color: var(--light-color);
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: calc(22/18*100%);
+
+    @include xl {
+      font-size: 18px;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 62px;
+    height: 62px;
+    background-size: 25%;
+
+    @include xl {
+      scale: 0.85;
+    }
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -31px;
+
+  }
+
+  .swiper-button-next {
+    right: -31px;
+  }
+
+  .swiper-pagination {
+    display: none;
+    bottom: 0;
+
+    @include lg {
+      display: block;
+    }
+  }
+}
