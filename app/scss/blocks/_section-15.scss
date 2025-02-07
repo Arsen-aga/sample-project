@@ -1,23 +1,8 @@
-.section-15 {
-  padding-top: var(--indent);
+.section-16{
+  padding: var(--indent) 0;
+  background-color: var(--section-bg);
 
-  &__title {
-    margin-bottom: 100px;
-
-    @include xl {
-      margin-bottom: 80px;
-    }
-
-    @include lg {
-      margin-bottom: 50px;
-    }
-
-    @include md {
-      margin-bottom: 30px;
-    }
-
-    @include sm {
-      margin-bottom: 20px;
-    }
+  &__title{
+    margin-bottom: 15px;
   }
 }
