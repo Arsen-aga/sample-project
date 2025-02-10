@@ -1,8 +1,309 @@
-.section-16{
+.section-15 {
   padding: var(--indent) 0;
   background-color: var(--section-bg);
 
-  &__title{
+  &__title {
     margin-bottom: 15px;
   }
+
+  &__step {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: var(--light-color);
+    box-shadow: 105px 212px 94px rgba(0, 0, 0, 0.01), 59px 119px 80px rgba(0, 0, 0, 0.05), 26px 53px 59px rgba(0, 0, 0, 0.09), 7px 13px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin-bottom: 40px;
+
+    @include lg {
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__step-first {
+    padding: 40px;
+
+    @include xl {
+      padding: 30px;
+    }
+
+    @include lg {
+      align-items: center;
+    }
+
+    @include md {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    @include sm {
+      padding: 20px;
+    }
+
+    .section-15__step-left {
+      padding: 0;
+    }
+  }
+
+  &__step-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step-pin {
+    padding: 8px 25px 8px 10px;
+    background-color: rgba(90, 90, 90, 0.7);
+    backdrop-filter: blur(17px);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    color: var(--light-color);
+
+    &__num {
+      min-width: 54px;
+      height: 54px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__title {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 100%;
+
+      @include xl {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__step-text {
+    margin-top: auto;
+    max-width: 520px;
+
+    @include lg {
+      margin-top: 15px;
+    }
+  }
+
+  &__form {
+    max-width: 480px;
+    width: 100%;
+
+    @include lg {
+      max-width: 345px;
+    }
+
+    @include md {
+      max-width: none;
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    @include lg {
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-image: url('../../images/icons/phone-inp.svg');
+      left: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include lg {
+        left: 10px;
+        height: 22px;
+      }
+
+      @include xs {
+        display: none;
+      }
+    }
+  }
+
+  &__form-btn,
+  &__form-tel {
+    height: 80px;
+  }
+
+  &__form-tel {
+    padding-left: 65px;
+
+    @include lg {
+      padding-left: 55px;
+    }
+
+    @include xs {
+      padding-left: 30px;
+    }
+  }
+
+  &__links {
+    position: absolute;
+    right: 40px;
+
+    @include lg {
+      height: 30px;
+      right: 20px;
+      gap: 10px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+
+    @include xl {
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    @include lg {
+      grid-auto-flow: column;
+      padding-bottom: 10px;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 486px;
+    padding: 30px 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+
+    @include xl {
+      padding: 20px;
+      height: 450px;
+    }
+
+    @include lg {
+      width: 300px;
+      height: 420px;
+    }
+
+    .overlay {
+      display: block;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+
+  &__item-content {
+    margin-top: auto;
+    position: relative;
+    color: var(--light-color);
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  &__item-info {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__step-left {
+    padding: 40px;
+
+    @include xl {
+      padding: 30px;
+      padding-right: 10px;
+      max-width: 56%;
+    }
+
+    @include lg {
+      max-width: none;
+      padding: 30px;
+    }
+
+    @include sm {
+      padding: 20px;
+    }
+  }
+
+  &__step-list {
+    margin: 50px 0 40px;
+    display: grid;
+    gap: 20px;
+
+    @include xl {
+      margin: 30px 0;
+    }
+
+    @include lg {
+      gap: 10px;
+    }
+
+    @include sm {
+      gap: 5px;
+      margin: 20px 0;
+    }
+  }
+
+  &__step-btn {
+    height: 75px;
+    max-width: 500px;
+  }
+
+  &__right {
+    max-width: 455px;
+    width: 100%;
+
+    @include xl {
+      max-width: 385px;
+    }
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  &__right-wrapper {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__step-descr {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.5;
+  }
+
 }

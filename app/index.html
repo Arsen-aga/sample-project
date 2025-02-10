@@ -2294,37 +2294,329 @@
     </div>
   </div>
 </section>
-  <section class="section-16 _section">
+  <section class="section-15 _section">
   <div class="container">
-    <h2 class="section-16__title _title">
+    <h2 class="section-15__title _title">
       За <span>7 шагов</span> построим надежную <br>и
       безопасную лестницу
     </h2>
-    <p class="section-16__subtitle _subtitle">
+    <p class="section-15__subtitle _subtitle">
       с учетом всех особенностей вашего помещения
     </p>
-    <div class="section-16__steps">
-      <div class="section-16__step">
-        <div class="section-16__step-pin step-pin">
-          <div class="step-pin__num"></div>
-          <p class="step-pin__title"></p>
-        </div>
-        <div class="section-16__step-left">
-          <p class="section-16__step-text">
+    <div class="section-15__steps">
+      <div class="section-15__step section-15__step-first">
+        <div class="section-15__step-left">
+          <div class="section-15__step-pin step-pin">
+            <div class="step-pin__num">01</div>
+            <p class="step-pin__title">
+              Оставляете заявку
+            </p>
+          </div>
+          <p class="section-15__step-text">
             <strong>Наш менеджер свяжется с вами</strong> для
             уточнения деталей заказа и сделает
             коммерческое предложение с ориентировочной стоимостью и сроками изготовления лестницы.
           </p>
         </div>
-        <form class="section-16__form form-submit" action="#" method="POST" enctype="multipart/form-data">
+        <form class="section-15__form form-submit" action="#" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="from" value="Оставить заявку через форму на сайте">
           <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
-          <div class="section-16__form"></div>
-          <input class="section-16__form-tel _input" type="tel" placeholder="Номер телефона">
-          <button type="submit" class="section-16__form-btn _main-btn">
-
+          <div class="section-15__form-wrapper">
+            <input class="section-15__form-tel _input" type="tel" placeholder="Номер телефона">
+            <div class="section-15__links socials">
+              <a class="socials__link" href="#">
+                <img class="socials__img" src="../../images/icons/telegram.svg" alt="telegram">
+              </a>
+              <a class="socials__link" href="#">
+                <img class="socials__img" src="../../images/icons/whatsapp.svg" alt="whatsapp">
+              </a>
+            </div>
+          </div>
+          <button type="submit" class="section-15__form-btn _main-btn">
+            Через форму на сайте
           </button>
         </form>
+      </div>
+      <div class="section-15__items-wrapper">
+        <div class="coursor visible-hand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+            <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+              fill="rgba(190,190,190,0.3)"></rect>
+            <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+              fill="rgba(190,190,190,0.3)"></rect>
+            <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+              fill="rgba(190,190,190,0.3)"></rect>
+            <path class="tooltip-horizontal-scroll-icon_hand"
+              d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+              fill="rgba(190,190,190,1)"></path>
+            <style>
+              .tooltip-horizontal-scroll-icon_hand {
+                animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+              }
+
+              .tooltip-horizontal-scroll-icon_card {
+                animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+              }
+
+              @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+                0% {
+                  transform: translateX(80px) scale(1);
+                  opacity: 0
+                }
+
+                10% {
+                  transform: translateX(80px) scale(1);
+                  opacity: 1
+                }
+
+                20%,
+                60% {
+                  transform: translateX(175px) scale(.6);
+                  opacity: 1
+                }
+
+                80% {
+                  transform: translateX(5px) scale(.6);
+                  opacity: 1
+                }
+
+                to {
+                  transform: translateX(5px) scale(.6);
+                  opacity: 0
+                }
+              }
+
+              @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+
+                0%,
+                60% {
+                  transform: translateX(0)
+                }
+
+                80%,
+                to {
+                  transform: translateX(-240px)
+                }
+              }
+            </style>
+          </svg>
+        </div>
+        <div class="section-15__items">
+          <div class="section-15__item">
+            <img class="section-15__item-img _img" src="../../images/section-15-1.webp" alt="section-15-1">
+            <div class="overlay"></div>
+            <div class="section-15__step-pin step-pin">
+              <div class="step-pin__num">02</div>
+              <p class="step-pin__title">Замер
+              </p>
+            </div>
+            <div class="section-15__item-content">
+              <h4 class="section-15__item-title">
+                Согласовываем с вами удобное время для замера
+              </h4>
+              <div class="section-15__item-info">
+                <p class="section-15__item-text">
+                  К вам приедет квалифицированный
+                  инженер-замерщик, на объекте мы учтем
+                  не менее 37 параметров вашего проема,
+                  а так же все пожелания по конструктиву и
+                  параметрам лестницы.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-15__item">
+            <img class="section-15__item-img _img" src="../../images/section-15-2.webp" alt="section-15-2">
+            <div class="overlay"></div>
+            <div class="section-15__step-pin step-pin">
+              <div class="step-pin__num">03</div>
+              <p class="step-pin__title">3D визуализация</p>
+            </div>
+            <div class="section-15__item-content">
+              <div class="section-15__item-info">
+                <p class="section-15__item-text">
+                  Проектировщик составляет и
+                  согласовывает 3D-визуализацию вашего
+                  проема и конструкции лестницы.
+                </p>
+                <p class="section-15__item-text">
+                  Мы не просто предоставим вам все
+                  необходимые чертежи и проекции, но и
+                  проведем консультацию по порядку
+                  проведения работ.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-15__item">
+            <img class="section-15__item-img _img" src="../../images/section-15-3.webp" alt="section-15-3">
+            <div class="overlay"></div>
+            <div class="section-15__step-pin step-pin">
+              <div class="step-pin__num">04</div>
+              <p class="step-pin__title">Согласование 3D проекта</p>
+            </div>
+            <div class="section-15__item-content">
+              <div class="section-15__item-info">
+                <p class="section-15__item-text">
+                  Приглашаем к нам в офис для
+                  ознакомления с выставочными
+                  образцами, цветами, производством и качеством изделий.
+                </p>
+                <p class="section-15__item-text">
+                  <strong>Срок: Через 2 - 3 дня после замера</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-15__step">
+        <div class="section-15__step-left">
+          <div class="section-15__step-pin step-pin">
+            <div class="step-pin__num">05</div>
+            <p class="step-pin__title">Заключение договора</p>
+          </div>
+          <ul class="section-15__step-list list-point">
+            <li class="section-15__step-point">
+              Окончательно согласовываем все детали
+              договора
+            </li>
+            <li class="section-15__step-point">
+              Для вашего удобства можем заключить
+              договор в электронном виде и принять
+              оплату любым удобным для вас способом
+            </li>
+            <li class="section-15__step-point">
+              На протяжении двух десятилетий мы расширили наши компетенции и совершенствовали мастерство, предлагая
+              широкий выбор
+              лестниц для домов, квартир, коммерческих помещений и уличного применения.
+            </li>
+            <li class="section-15__step-point">
+              Согласование второго подробного этапа
+              спецификации, на котором будут
+              уточнены все особенности вашего
+              проема: двери, окна, трубы, провода,<br>
+              места, крепления/примыкания места с размерами для закладных<br> и прочих
+              элементов
+            </li>
+            <li class="section-15__step-point">
+              Подписание договора и внесение
+              предоплаты 50% (порядок оплаты зависит
+              от количества этапов изготовления
+              лестницы)
+            </li>
+          </ul>
+          <a class="section-15__step-btn _main-btn" href="#">
+            Есть возможность оплаты через сайт
+          </a>
+        </div>
+        <div class="section-15__right">
+          <div class="section-15__right-wrapper">
+            <img class="section-15__right-img _img" src="../../images/section-15-4.webp" alt="section-15-4">
+          </div>
+        </div>
+      </div>
+      <div class="section-15__step">
+        <div class="section-15__step-left">
+          <div class="section-15__step-pin step-pin">
+            <div class="step-pin__num">06</div>
+            <p class="step-pin__title">Изготовление</p>
+          </div>
+          <ul class="section-15__step-list list-point">
+            <li class="section-15__step-point">
+              На данном этапе в процесс включаются мастера компании. Они изготавливают
+              лестницу в строгом соответствии с согласованным проектом.
+            </li>
+            <li class="section-15__step-point">
+              Окончательная шлифовка и покраска
+              элементов лестницы
+            </li>
+            <li class="section-15__step-point">
+              Производство стекол или других
+              конструкционных элементов
+            </li>
+          </ul>
+          <a class="section-15__step-btn _main-btn" href="#">
+            Срок: от 1 до 4х недель после подписания договора
+          </a>
+        </div>
+        <div class="section-15__right">
+          <div class="section-15__right-wrapper">
+            <img class="section-15__right-img _img" src="../../images/section-15-5.webp" alt="section-15-5">
+          </div>
+        </div>
+      </div>
+      <div class="section-15__step">
+        <div class="section-15__step-left">
+          <div class="section-15__step-pin step-pin">
+            <div class="step-pin__num">07</div>
+            <p class="step-pin__title">Монтаж</p>
+          </div>
+          <ul class="section-15__step-list list-point">
+            <li class="section-15__step-point">
+              Менеджеры согласовывают с вами
+              удобные день и время доставки, и
+              лестница отправляется на объект.
+            </li>
+            <li class="section-15__step-point">
+              Производим монтаж лестницы непосредственно на вашем объекте,
+              установку и закрепление всех деталей
+              согласно проекту.
+            </li>
+            <li class="section-15__step-point">
+              Подробный осмотр качества сборки и
+              отделки каждой части лестницы
+            </li>
+            <li class="section-15__step-point">
+              Доставка и монтаж осуществляются бесплатно. Монтажные бригады работают
+              в том числе и по выходным дням
+            </li>
+          </ul>
+          <a class="section-15__step-btn _main-btn" href="#">
+            Срок монтажа занимает от 1 до 3 дней*
+          </a>
+          <p class="section-15__step-descr">
+            *зависит от сложности проекта
+          </p>
+        </div>
+        <div class="section-15__right">
+          <div class="section-15__right-wrapper">
+            <img class="section-15__right-img _img" src="../../images/section-15-6.webp" alt="section-15-6">
+          </div>
+        </div>
+      </div>
+      <div class="section-15__step">
+        <div class="section-15__step-left">
+          <div class="section-15__step-pin step-pin">
+            <div class="step-pin__num">08</div>
+            <p class="step-pin__title">Сдача объекта</p>
+          </div>
+          <ul class="section-15__step-list list-point">
+            <li class="section-15__step-point">
+              Демонстрация функциональности и безопасности конструкции
+            </li>
+            <li class="section-15__step-point">
+              Уборка рабочей зоны
+            </li>
+            <li class="section-15__step-point">
+              Передача всех необходимых документов, включая гарантийные обязательства и
+              инструкции по уходу за лестницей
+            </li>
+            <li class="section-15__step-point">
+              Консультация по возможным вопросам
+              эксплуатации и техническому
+              обслуживанию
+            </li>
+          </ul>
+          <a class="section-15__step-btn _main-btn" href="#">
+            Срок: от 1 до 4х недель после подписания договора
+          </a>
+        </div>
+        <div class="section-15__right">
+          <div class="section-15__right-wrapper">
+            <img class="section-15__right-img _img" src="../../images/section-15-7.webp" alt="section-15-7">
+          </div>
+        </div>
       </div>
     </div>
   </div>
