@@ -128,6 +128,7 @@ a {
   line-height: calc(22/18*100%);
   color: white;
   cursor: pointer;
+  text-align: center;
 
   @include lg {
     border-radius: 12px;
@@ -157,6 +158,7 @@ a {
   line-height: calc(22/18*100%);
   color: var(--default-color);
   cursor: pointer;
+  text-align: center;
 
   &:hover {
     background-color: var(--primary);
@@ -366,6 +368,19 @@ a {
   }
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__img,
+  &__link{
+    display: block;
+    height: 100%;
+  }
+
+}
+
 
 
 
@@ -404,23 +419,6 @@ a {
 
     @include sm {
       font-size: 14px;
-    }
-  }
-}
-
-.socials {
-  &__title {
-    font-weight: 800;
-    font-size: 14px;
-    line-height: calc(19/14*100%);
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    color: var(--form-text);
-    margin-bottom: 15px;
-
-    @include sm {
-      font-size: 12px;
-      margin-bottom: 10px;
     }
   }
 }
