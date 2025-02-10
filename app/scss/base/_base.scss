@@ -115,7 +115,7 @@ a {
 }
 
 ._main-btn {
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,6 +145,7 @@ a {
 }
 
 ._light-btn {
+  text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
