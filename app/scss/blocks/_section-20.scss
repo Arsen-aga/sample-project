@@ -1,0 +1,32 @@
+.section-20 {
+  background-image: url('../../images/section-20-bg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: var(--indent);
+  padding: var(--indent) 0;
+
+  &__form {
+    max-width: 480px;
+    margin-left: auto;
+  }
+
+  &__form-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+
+    @include xl {
+      margin-bottom: 30px;
+    }
+
+    @include lg {
+      margin-bottom: 20px;
+    }
+
+    @include md {
+      margin-bottom: 15px;
+    }
+  }
+}

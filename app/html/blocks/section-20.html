@@ -1,0 +1,46 @@
+<section class="section-20 _section">
+  <div class="container">
+    <form class="section-20__form section-11__form form-submit" action="#" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="from" value="Получить индивидуальную
+          разработку проекта">
+      <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+      <h3 class="section-11__form-title">
+        Посмотрите, как оживают ваши идеи
+      </h3>
+      <p class="section-20__form-subtitle">
+        оставьте заявку на экскурсию <br>по нашему производству
+      </p>
+      <div class="section-11__form-inner">
+        <input class="section-11__form-input _input" type="text" placeholder="Имя" name="name">
+        <input class="section-11__form-input _input" type="number" placeholder="Номер телефона" name="phone">
+        <button type="submit" class="section-11__from-btn _main-btn">
+          Получить индивидуальную
+          разработку проекта
+        </button>
+        <label class="section-11__checkbox-block checkbox-block">
+          <input type="checkbox" name="access" required checked>
+          <span>
+            @@include('../../images/icons/check.svg')
+          </span>
+          <p>
+            Я принимаю условия <a data-fancybox="" class="_link" href="#policy">политики
+              конфиденциальности</a>
+          </p>
+        </label>
+    
+        <hr>
+    
+    
+        <div class="section-11__form-phone">
+          @@include('../../images/icons/phone.svg')
+          <a class="section-11__form-link" href="tel:+74997034656">
+            <strong>Или звоните:</strong> +7 (499) 703-46-56
+          </a>
+        </div>
+    
+    
+    
+      </div>
+    </form>
+  </div>
+</section>

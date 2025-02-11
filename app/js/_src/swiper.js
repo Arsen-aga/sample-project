@@ -137,6 +137,24 @@ if (document.querySelectorAll(".section-14__slide").length > 0) {
   }
 }
 
+if (document.querySelector(".section-21__swiper")) {
+  new Swiper(".section-21__swiper", {
+    spaceBetween: 15,
+    slidesPerView: "auto",
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 4000,
+    },
+    breakpoints:{
+      991.8:{
+        spaceBetween: 30
+      }
+    }
+  });
+}
+
+
 
 
 
