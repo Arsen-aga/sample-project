@@ -1,0 +1,177 @@
+.section-17 {
+  padding-top: var(--indent);
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+
+    @include xl {
+      margin-bottom: 50px;
+      gap: 15px;
+    }
+
+    @include lg {
+      margin-bottom: 30px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    @include md {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    background-color: var(--light-color);
+    box-shadow: 0px 6px 60px rgba(163, 169, 183, 0.16);
+    border-radius: 30px;
+    padding: 30px 35px;
+
+    @include xl {
+      padding: 20px 25px;
+    }
+
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 72px;
+    width: fit-content;
+    height: 72px;
+    background-color: var(--primary);
+    border-radius: 22px;
+    margin-bottom: 20px;
+
+    @include xl {
+      margin-bottom: 15px;
+      min-width: 42px;
+      height: 42px;
+      border-radius: 12px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+
+    @include xl {
+      font-size: 24px;
+    }
+
+    @include lg {
+      font-size: 22px;
+    }
+
+    @include md {
+      font-size: 20px;
+    }
+
+    @include sm {
+      font-size: 18px;
+    }
+  }
+
+  &__elems {
+    display: grid;
+    gap: 40px;
+
+    @include xl {
+      gap: 30px;
+    }
+
+    @include lg {
+      grid-auto-flow: column;
+      overflow-x: auto;
+      gap: 15px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+
+    @include lg {
+      width: 300px;
+      flex-direction: column;
+    }
+  }
+
+  &__elem-wrapper {
+    position: relative;
+    max-width: 590px;
+    width: 100%;
+    height: 348px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    @include lg {
+      height: auto;
+      padding-bottom: 69%;
+    }
+  }
+
+  &__elem-info {
+    max-width: 610px;
+    min-height: 292px;
+    background: var(--light-color);
+    box-shadow: -7px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+
+    @include xl {
+      max-width: 525px;
+    }
+
+    @include lg {
+      height: 100%;
+      padding: 20px 15px;
+    }
+  }
+
+  &__elem-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    @include xl {
+      margin-bottom: 20px;
+    }
+
+    @include lg {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__elem-list {
+    display: grid;
+    gap: 20px;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      gap: 10px;
+      font-size: 16px;
+    }
+  }
+
+
+}
