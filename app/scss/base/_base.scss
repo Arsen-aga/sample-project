@@ -16,14 +16,6 @@ body {
   overflow: hidden;
 }
 
-.main {
-  margin: 0 auto 90px;
-
-  @include md {
-    margin-bottom: 40px;
-  }
-}
-
 a {
   color: var(--link-color);
 }
