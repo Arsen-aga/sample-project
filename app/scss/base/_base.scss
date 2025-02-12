@@ -16,14 +16,6 @@ body {
   overflow: hidden;
 }
 
-.main {
-  margin: 0 auto 90px;
-
-  @include md {
-    margin-bottom: 40px;
-  }
-}
-
 a {
   color: var(--link-color);
 }
@@ -306,7 +298,7 @@ a {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background-color: var(--accent);
+    background-color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,48 @@
+.section-25 {
+  padding-top: var(--indent);
+
+  &__accordion {
+    gap: 10px;
+  }
+
+  &__item {
+    border-radius: 16px;
+    background-color: var(--section-bg);
+
+    &.active,
+    &:hover {
+      background-color: var(--default-color);
+      color: var(--light-color);
+
+      .open-item svg {
+        path {
+          stroke: var(--light-color);
+        }
+      }
+    }
+  }
+
+  &__item-header {
+    padding: 22px 30px;
+
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .open-item svg {
+    path {
+      stroke: var(--default-color);
+    }
+  }
+
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}

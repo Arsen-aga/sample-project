@@ -184,6 +184,26 @@
     @include md {
       padding: 30px;
     }
+
+    hr {
+      margin: 25px auto 30px;
+      max-width: 335px;
+      width: 100%;
+      color: var(--border);
+      opacity: 0.5;
+
+      @include xl {
+        margin: 20px auto;
+      }
+
+      @include lg {
+        margin: 15px auto;
+      }
+
+      @include xs {
+        display: none;
+      }
+    }
   }
 
   &__form-title {
@@ -254,26 +274,6 @@
   &__form-inner {
     display: grid;
     gap: 10px;
-  }
-
-  hr {
-    margin: 25px auto 30px;
-    max-width: 335px;
-    width: 100%;
-    color: var(--border);
-    opacity: 0.5;
-
-    @include xl {
-      margin: 20px auto;
-    }
-
-    @include lg {
-      margin: 15px auto;
-    }
-
-    @include xs {
-      display: none;
-    }
   }
 
   &__form-phone {

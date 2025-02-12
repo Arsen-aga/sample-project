@@ -1,0 +1,42 @@
+.section-18 {
+  padding-top: var(--indent);
+  max-width: 1880px;
+  margin: 0 auto;
+
+  &__video {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: calc(1000/1880*100%);
+    border-radius: 45px;
+    overflow: hidden;
+
+    @include xl {
+      border-radius: 30px;
+    }
+
+    @include lg {
+      border-radius: 25px;
+    }
+  }
+
+  .play {
+    &__inner {
+      width: 100px;
+      height: 100px;
+
+      @include xl {
+        width: 62px;
+        height: 62px;
+      }
+    }
+
+    &__img {
+      scale: 2;
+
+      @include xl {
+        scale: 1;
+      }
+    }
+  }
+}
