@@ -243,14 +243,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 
     @include xl {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     @include lg {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     @include md {

@@ -1,5 +1,5 @@
-if (document.querySelectorAll(".quiz-block, .modal-quiz")) {
-  const quizes = document.querySelectorAll(".quiz-block, .modal-quiz");
+if (document.querySelectorAll(".quiz-block, #quiz-modal")) {
+  const quizes = document.querySelectorAll(".quiz-block, #quiz-modal");
   quizes.forEach((quiz) => {
     const line = quiz.querySelector(".line");
     const lineWrapper = quiz.querySelector(".progress-bar");
@@ -10,10 +10,8 @@ if (document.querySelectorAll(".quiz-block, .modal-quiz")) {
     const variants = quiz.querySelectorAll(".variant");
 
     const leftContent = quiz.querySelector(".quiz-block__left");
-    const title = quiz.querySelector(".quiz-block__title");
     const quizWrapper = quiz.querySelector(".quiz-block__inner");
 
-    const newTitle = "Сконфигурируйте лестницу под свой интерьер";
     const lineShow = 100 / steps.length - 1;
 
     let count = 0;
@@ -22,11 +20,10 @@ if (document.querySelectorAll(".quiz-block, .modal-quiz")) {
     btnNext.forEach((btn) => btn.addEventListener("click", nextStep));
     btnPrev.forEach((btn) => btn.addEventListener("click", prevStep));
 
-    function showFinishBlock(title, newTitle, wrapper, hiddenBlock = false) {
+    function showFinishBlock(wrapper, hiddenBlock = false) {
       if (hiddenBlock) hiddenBlock.style.display = "none";
 
-      if (title) title.innerHTML = newTitle;
-      wrapper.classList.add("active");
+      wrapper?.classList.add("active");
       if (validateInputs(steps, steps.length - 2)) {
         steps[steps.length - 1].style.display = "flex";
       }
@@ -36,7 +33,7 @@ if (document.querySelectorAll(".quiz-block, .modal-quiz")) {
       const modalFooterText = steps[count].querySelector(".quiz-needs-select");
 
       if (count == steps.length - 2) {
-        showFinishBlock(title, newTitle, quizWrapper, leftContent);
+        showFinishBlock(quizWrapper, leftContent);
       }
 
       // проверяем нажат ли инпут

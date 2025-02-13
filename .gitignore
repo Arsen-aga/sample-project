@@ -6,6 +6,7 @@
 npm-debug.*
 
 node_modules/
+dist/
 package-lock.json
 app/css
 app/fonts/_src

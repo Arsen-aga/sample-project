@@ -1,6 +1,6 @@
 .politics-modal {
   border-radius: 20px;
-  
+
   max-width: 600px !important;
   background-color: var(--page-bg) !important;
   color: var(--default-color) !important;
@@ -38,7 +38,8 @@
 
   &__callback-title {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    line-height: 1.2;
   }
 
   &__callback-subtitle {
@@ -48,17 +49,21 @@
 
   &__callback-inner {
     display: grid;
-    gap: 25px;
+    gap: 15px;
   }
 
+  &__callback-btn,
   &__callback-inp {
-    background-color: transparent;
-    border: none;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--default-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: var(--default-color);
+    height: 80px;
   }
+
+}
+
+#quiz-modal.quiz-block {
+
+  &__inner {
+    width: 100%;
+    padding: 40px 0;
+  }
+
 }

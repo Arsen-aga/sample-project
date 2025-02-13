@@ -407,6 +407,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--light-color);
+
+  input {
+    color: var(--default-color);
+  }
 }
 
 .quiz-block__inner.active {
