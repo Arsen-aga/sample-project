@@ -1,6 +1,14 @@
 .header {
   padding: 24px 0;
-
+  background-color: var(--light-color);
+  transition: all .3s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  
+  
   @include lg {
     padding: 15px 0;
   }

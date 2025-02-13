@@ -1,5 +1,3 @@
-// quiz
-
 if (document.querySelectorAll(".quiz-block, .modal-quiz")) {
   const quizes = document.querySelectorAll(".quiz-block, .modal-quiz");
   quizes.forEach((quiz) => {
@@ -139,12 +137,19 @@ if (document.querySelectorAll(".quiz-block, .modal-quiz")) {
     function validateInputs(steps, index) {
       const inputs = [
         ...steps[index].querySelectorAll(
-          ".radio-input, select, input[type='text']"
+          ".radio-input, select, input[type='text'], .form-control"
         ),
       ];
       const assessment = steps[index].querySelector(".assessment__comment");
       const checkInp = inputs.some(function (input) {
         if (input.tagName === "SELECT" && input.value != "Выбрать отрасль") {
+          return true;
+        }
+
+        if (
+          input.classList.contains("form-control") &&
+          input.value != "Введите свое значение"
+        ) {
           return true;
         }
 

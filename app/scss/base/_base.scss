@@ -16,6 +16,14 @@ body {
   overflow: hidden;
 }
 
+.main {
+  padding-top: 132px;
+
+  @include lg {
+    padding-top: 115px;
+  }
+}
+
 a {
   color: var(--link-color);
 }
@@ -368,7 +376,7 @@ a {
   gap: 20px;
 
   &__img,
-  &__link{
+  &__link {
     display: block;
     height: 100%;
   }
